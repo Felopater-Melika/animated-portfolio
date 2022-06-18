@@ -18,33 +18,41 @@ const Sidebar = () => {
         <img className='sub-logo' src={logoSubtitle} alt='logoSub' />
       </Link>
       <nav>
-        {/* @ts-ignore */}
-        <NavLink exact='true' activeclassname='active' to='/'>
+        <NavLink className='home-link' to='/'>
           <FontAwesomeIcon icon={faHome} color='#4D4D4E' />
         </NavLink>
-        <NavLink activeClassName='active' className='about-link' to='/about'>
+        <NavLink className='about-link' to='/about'>
           <FontAwesomeIcon icon={faUser} color='#4D4D4E' />
         </NavLink>
-        <NavLink
-          activeClassName='active'
-          className='contact-link'
-          to='/contact'>
+        <NavLink className='contact-link' to='/contact'>
           <FontAwesomeIcon icon={faEnvelope} color='#4D4D4E' />
         </NavLink>
       </nav>
       <ul>
         <li>
-          <a href='https://www.linkedin.com' target='_blank' rel='noreferrer'>
+          <a
+            className='sm-link'
+            href='https://www.linkedin.com'
+            target='_blank'
+            rel='noreferrer noopener'>
             <FontAwesomeIcon icon={faLinkedin} color='#4D4D4E' />
           </a>
         </li>
         <li>
-          <a href='https://github.com' target='_blank' rel='noreferrer'>
+          <a
+            className='sm-link'
+            href='https://github.com'
+            target='_blank'
+            rel='noreferrer noopener'>
             <FontAwesomeIcon icon={faGithub} color='#4D4D4E' />
           </a>
         </li>
         <li>
-          <a href='https://twitter.com' target='_blank' rel='noreferrer'>
+          <a
+            className='sm-link'
+            href='https://twitter.com'
+            target='_blank'
+            rel='noreferrer noopener'>
             <FontAwesomeIcon icon={faTwitter} color='#4D4D4E' />
           </a>
         </li>
