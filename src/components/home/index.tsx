@@ -3,6 +3,7 @@ import LogoTitle from '../../assets/images/logo-s.png';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Letters from '../letters';
+import Logo from './logo';
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
   const nameArray = ['l', 'o', 'b', 'o', 'd', 'a', 'n'];
@@ -48,6 +49,7 @@ const Home = () => {
           CONTACT ME
         </Link>
       </div>
+      <Logo />
     </div>
   );
 };
